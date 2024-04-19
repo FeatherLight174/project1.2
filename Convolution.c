@@ -82,10 +82,8 @@ int main(int argc,char ** argv){
       fprintf(output_file, "%d", result_matrix[i][j]);
       if(j == result_length - 1){
         fputs("\n", output_file);
-      }
-      else{
-        fputs(" ", output_file);
-      }
+      }    
+      fputs(" ", output_file);
     }
   }
 
