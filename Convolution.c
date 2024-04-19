@@ -80,10 +80,10 @@ int main(int argc,char ** argv){
   for(int i = 0; i < result_width; i++){
     for(int j = 0; j < result_length; j++){
       fprintf(output_file, "%d", result_matrix[i][j]);
+      fputs(" ", output_file);
       if(j == result_length - 1){
         fputs("\n", output_file);
-      }    
-      fputs(" ", output_file);
+      }
     }
   }
 
